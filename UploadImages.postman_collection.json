@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "5eb5bf38-be8a-4368-b469-3202e19ae3e6",
+		"name": "UploadImages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fetchAllPublicImages",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/fetchAllPublicImages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fetchAllPublicImages"
+					]
+				},
+				"description": "This will fetch All images that are uploaded in public domain"
+			},
+			"response": []
+		},
+		{
+			"name": "UploadImage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "private",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/shakeel/Downloads/New Doc 2019-06-26 12.59.58_1 (1).jpg"
+						},
+						{
+							"key": "permission",
+							"value": "private",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/uploadImage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"uploadImage"
+					]
+				},
+				"description": "Upload Images"
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "private",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "john111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete"
+					]
+				},
+				"description": "Delete Images based username and name of the image"
+			},
+			"response": []
+		},
+		{
+			"name": "fetchUserBasedImages",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "iftekhar",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/fetchUserBasedImages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fetchUserBasedImages"
+					]
+				},
+				"description": "Will fetch only specific user images"
+			},
+			"response": []
+		},
+		{
+			"name": "searchImages",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Book",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/searchImages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"searchImages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
