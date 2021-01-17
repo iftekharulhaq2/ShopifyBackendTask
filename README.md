@@ -24,6 +24,7 @@ node app.js
 The server runs on port 3000, use the postman collection provided to test the functionality 
 example `http://localhost:3000/uploadImage`
 
+Please open the gif folder for more clarity
  
 ### Endpoints 
  - **/uploadImage/** : 
